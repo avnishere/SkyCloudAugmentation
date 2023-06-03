@@ -23,11 +23,11 @@ optimize_metric: accuracy   # [options: accuracy, val_loss, miou, mcc, train_los
 
 data:     # images and labels files should have the same filename
   train:
-    image_path: /home/avnish/backup/data/swimseg/A/train/
-    label_path: /home/avnish/backup/data/swimseg/B/train/
+    image_path: 
+    label_path: 
   val:
-    image_path: /home/avnish/backup/data/swimseg/A/val/
-    label_path: /home/avnish/backup/data/swimseg/B/val/
+    image_path: 
+    label_path: 
 
 base_transform:     # applicabel to all datasets.  remove _target_ and subsequent params for no base transforms
   _target_: torchvision.transforms.Resize
@@ -67,7 +67,7 @@ early_stopping:
   delta: 0
 
 evaluate:
-  image_path: /home/avnish/backup/data/swimseg/A/test/
-  label_path: /home/avnish/backup/data/swimseg/B/test/
+  image_path: 
+  label_path: 
   batch_size: 32
-  model_path: /home/avnish/SkyCloudAugmentation/deeplabv3/experiments/experiment_1/models/model_epoch_4.pth
+  model_path: 
