@@ -29,7 +29,7 @@ data:     # images and labels files should have the same filename
     image_path: 
     label_path: 
 
-base_transform:     # applicabel to all datasets.  remove _target_ and subsequent params for no base transforms
+base_transform:     # applicable to all datasets.  remove _target_ and subsequent params for no base transforms
   _target_: torchvision.transforms.Resize
   size: [64, 64]
   interpolation: NEAREST
@@ -45,7 +45,7 @@ train_params:
   enable_early_stopping: True
 
 model_params:
-  checkpoint:             # add checkpoint to resuming training
+  checkpoint:             # add checkpoint to resume training
   model:
     _target_: torchvision.models.segmentation.deeplabv3_resnet50    # deeplabv3_mobilenet_v3_large, lraspp_mobilenet_v3_large
     progress: True
