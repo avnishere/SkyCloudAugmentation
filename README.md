@@ -6,8 +6,7 @@ Generative Augmentation using DC-GAN and pix2pix for Sky Cloud Image Segmentatio
 
 This work is in collaboration with [jain15mayank](https://github.com/jain15mayank).
 
-
-## Create Virtual Environment
+## Create Virtual Environment
 
 ```
 cd SkyCloudAugmentation
@@ -24,7 +23,7 @@ pip install -r requirements.txt
 
 `cd deeplabv3`
 
-Place/replace values in the hydra `config.yaml` file accordingly. For a quick run: place your train and val dataset folders under `data.train` and `data.val` fields. 
+Place/replace values in `config.yaml` accordingly. For a quick run: place your train and val dataset folder paths under `data.train` and `data.val` fields. 
 
 Then, `python train.py` 
 
